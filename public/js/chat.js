@@ -111,7 +111,7 @@ function scrollToBottom () {
                 locationButton.removeAttr('disabled').text('Send location');
                 socket.emit('createLocationMessage', {
                     latitude: position.coords.latitude,
-                    logitude: position.coords.longitude
+                    longitude: position.coords.longitude
                 });
             }, function () {
                 locationButton.removeAttr('disabled').text('Send location');
